@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "divpreet-1-bucket"
+    bucket         = "divpreet-new-bucket"
     key            = "terraform.tfstate"
     region         = "ap-south-1"
-    dynamodb_table = "state-locking-table"
+    dynamodb_table = "div-state-locking-table"
   }
 }
